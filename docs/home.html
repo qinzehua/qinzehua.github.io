@@ -1,2 +1,26 @@
-<h1>Home</h1>
-<div>hello</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index.css" />
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const inner = document.getElementById("inner");
+        const client = document.getElementById("client");
+
+        inner.style.height = window.innerHeight + "px";
+        client.style.height = document.documentElement.clientHeight + "px";
+      });
+    </script>
+  </head>
+  <body>
+    <div class="c">
+      <div id="inner"></div>
+      <div id="client"></div>
+    </div>
+  </body>
+</html>
