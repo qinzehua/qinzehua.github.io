@@ -15,11 +15,19 @@
         inner.style.height = window.innerHeight + "px";
         inner.innerText = "inner: " + window.innerHeight + "px";
         client.style.height = document.documentElement.clientHeight + "px";
-        client.innerText = "client: " + document.documentElement.clientHeight + "px";
+        client.innerText =
+          "client: " + document.documentElement.clientHeight + "px";
+      });
+
+      window.addEventListener("resize", () => {
+        const tip = document.getElementById("tip");
+
+        tip.innerText = "inner: " + window.innerHeight + "px";
       });
     </script>
   </head>
   <body>
+    <div id="tip">x</div>
     <div class="c">
       <div id="inner">inner</div>
       <div id="client">client</div>
