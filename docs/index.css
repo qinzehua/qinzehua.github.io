@@ -5,6 +5,7 @@
 .c {
   display: flex;
   gap: 1rem;
+  height: 1200px;
 }
 
 #inner {
