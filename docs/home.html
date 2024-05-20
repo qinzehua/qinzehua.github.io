@@ -22,7 +22,14 @@
       window.addEventListener("resize", () => {
         const tip = document.getElementById("tip");
 
-        tip.innerText = "inner: " + window.innerHeight + "px";
+        tip.innerText =
+          "inner: " +
+          window.innerHeight +
+          "px" +
+          "\n" +
+          "client: " +
+          document.documentElement.clientHeight +
+          "px";
       });
     </script>
   </head>
