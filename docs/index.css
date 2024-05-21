@@ -30,11 +30,13 @@
 #inner {
   border: 1px solid #000;
   flex: 1;
-  height: 100dvh;
+  height: 100vh;
+  background: #7051a1;
 }
 
 #client {
   border: 1px solid #000;
   flex: 1;
-  height: 100vh;
+  height: 100svh;
+  background: #7051a1;
 }
