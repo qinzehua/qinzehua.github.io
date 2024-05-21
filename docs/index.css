@@ -31,9 +31,11 @@
 #inner {
   border: 1px solid #000;
   flex: 1;
+  height: 100dvh;
 }
 
 #client {
   border: 1px solid #000;
   flex: 1;
+  height: 100vh;
 }
