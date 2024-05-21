@@ -11,24 +11,11 @@
       window.addEventListener("DOMContentLoaded", () => {
         const inner = document.getElementById("inner");
         const client = document.getElementById("client");
-
-        inner.style.height = window.innerHeight + "px";
         inner.innerText = "inner: " + window.innerHeight + "px";
-        client.style.height = document.documentElement.clientHeight + "px";
         client.innerText =
           "client: " + document.documentElement.clientHeight + "px";
       });
 
-      window.addEventListener("resize", () => {
-        const inner = document.getElementById("inner");
-        const client = document.getElementById("client");
-
-        inner.style.height = window.innerHeight + "px";
-        inner.innerText = "inner: " + window.innerHeight + "px";
-        client.style.height = document.documentElement.clientHeight + "px";
-        client.innerText =
-          "client: " + document.documentElement.clientHeight + "px";
-      });
     </script>
   </head>
   <body>
