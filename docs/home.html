@@ -9,25 +9,15 @@
     <link rel="stylesheet" href="./index.css" />
     <script>
       window.addEventListener("DOMContentLoaded", () => {
-        const inner = document.getElementById("inner");
-        const client = document.getElementById("client");
-        inner.innerText = "inner: " + window.innerHeight + "px";
-        client.innerText =
-          "client: " + document.documentElement.clientHeight + "px";
+        // const inner = document.getElementById("inner");
+        // const client = document.getElementById("client");
+        // inner.innerText = "inner: " + window.innerHeight + "px";
+        // client.innerText =
+        //   "client: " + document.documentElement.clientHeight + "px";
       });
-
-            window.addEventListener("resize", () => {
-        const inner = document.getElementById("inner");
-        const client = document.getElementById("client");
-        inner.innerText = "inner: " + window.innerHeight + "px";
-        client.innerText =
-          "client: " + document.documentElement.clientHeight + "px";
-      });
-
     </script>
   </head>
   <body>
-    <div id="tip">x</div>
     <div class="c">
       <div id="inner">inner</div>
       <div id="client">client</div>
