@@ -16,6 +16,14 @@
           "client: " + document.documentElement.clientHeight + "px";
       });
 
+            window.addEventListener("resize", () => {
+        const inner = document.getElementById("inner");
+        const client = document.getElementById("client");
+        inner.innerText = "inner: " + window.innerHeight + "px";
+        client.innerText =
+          "client: " + document.documentElement.clientHeight + "px";
+      });
+
     </script>
   </head>
   <body>
